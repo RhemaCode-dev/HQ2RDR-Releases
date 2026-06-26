@@ -1,0 +1,42 @@
+{
+  "beta": {
+    "version": "2.0.0-beta.1",
+    "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
+    "notes": "HQ2RDR v2.0.0-beta.1",
+    "channel": "beta",
+    "assets": {
+      "windows_installer": {
+        "name": "HQ2RDR_Setup_v2.0.0-beta.1.exe",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.1/HQ2RDR_Setup_v2.0.0-beta.1.exe"
+      },
+      "windows_portable": {
+        "name": "HQ2RDR_Windows_v2.0.0-beta.1.zip",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.1/HQ2RDR_Windows_v2.0.0-beta.1.zip"
+      },
+      "linux_zip": {
+        "name": "HQ2RDR_Linux_v2.0.0-beta.1.zip",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.1/HQ2RDR_Linux_v2.0.0-beta.1.zip"
+      }
+    }
+  },
+  "stable": {
+    "version": "1.6.5",
+    "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
+    "notes": "HQ2RDR v1.6.5",
+    "channel": "stable",
+    "assets": {
+      "windows_installer": {
+        "name": "HQ2RDR_Setup_v1.6.5.exe",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Setup_v1.6.5.exe"
+      },
+      "windows_portable": {
+        "name": "HQ2RDR_Windows_v1.6.5.zip",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Windows_v1.6.5.zip"
+      },
+      "linux_zip": {
+        "name": "HQ2RDR_Linux_v1.6.5.zip",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Linux_v1.6.5.zip"
+      }
+    }
+  }
+}
