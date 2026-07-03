@@ -1,13 +1,13 @@
 {
   "beta": {
-    "version": "2.0.0-beta.3",
+    "version": "2.0.0-beta.4",
     "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
-    "notes": "HQ2RDR v2.0.0-beta.3: .NET/Avalonia remake beta for Windows.",
+    "notes": "HQ2RDR v2.0.0-beta.4: .NET/Avalonia remake beta for Windows.",
     "channel": "beta",
     "assets": {
       "windows_installer": {
-        "name": "HQ2RDR_Setup_v2.0.0-beta.3.exe",
-        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.3/HQ2RDR_Setup_v2.0.0-beta.3.exe"
+        "name": "HQ2RDR_Setup_v2.0.0-beta.4.exe",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.4/HQ2RDR_Setup_v2.0.0-beta.4.exe"
       }
     }
   },
