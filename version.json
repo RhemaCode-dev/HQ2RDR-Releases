@@ -14,22 +14,16 @@
     }
   },
   "stable": {
-    "version": "1.6.5",
+    "version": "2.0.0",
     "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
-    "notes": "HQ2RDR v1.6.5",
+    "notes": "HQ2RDR v2.0.0: .NET/Avalonia stable release for Windows.",
     "channel": "stable",
     "assets": {
       "windows_installer": {
-        "name": "HQ2RDR_Setup_v1.6.5.exe",
-        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Setup_v1.6.5.exe"
-      },
-      "windows_portable": {
-        "name": "HQ2RDR_Windows_v1.6.5.zip",
-        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Windows_v1.6.5.zip"
-      },
-      "linux_zip": {
-        "name": "HQ2RDR_Linux_v1.6.5.zip",
-        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v1.6.5/HQ2RDR_Linux_v1.6.5.zip"
+        "name": "HQ2RDR_Setup_v2.0.0.exe",
+        "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0/HQ2RDR_Setup_v2.0.0.exe",
+        "sha256": "d164adb994970ddb2e03a08e219243404be511500b0620f6689b38632837a85d",
+        "size_bytes": 54081603
       }
     }
   }
