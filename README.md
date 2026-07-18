@@ -1,7 +1,6 @@
 # HQ2RDR Logger & QSL Pro
 
-**Current beta version:** `2.0.0-beta.1`  
-**Current stable version:** `1.6.5`
+**Current stable version:** `2.1.0`
 
 HQ2RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
 
@@ -11,19 +10,14 @@ Developed by **RhemaCode**.
 - Sitio en español: https://rhemacode.com/es/hq2rdr-logger
 - Support: contacto@rhemacode.com
 
-
-## .NET Remake Beta
-
-`2.0.0-beta.1` is the first public beta of the HQ2RDR .NET/Avalonia remake. This beta currently publishes a Windows installer and focuses on the new live logger workspace, station control, logbook, QRZ/LoTW workflows, DX Cluster, Activations, QSL Designer, Stats, DX Map/Globe, and audio foundations.
-
-Use the `beta` channel if you want to test the remake. Keep backups of your local HQ2RDR data before moving between stable and beta builds.
 ## Download
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Beta `2.0.0-beta.1` Windows installer is published as:
+Stable `2.1.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.0.0-beta.1/HQ2RDR_Setup_v2.0.0-beta.1.exe)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.1.0/HQ2RDR_Setup_v2.1.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.1.0/HQ2RDR_Linux_x64_v2.1.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -88,6 +82,17 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
 
+## What's New In 2.1.0
+
+- Interactive HF propagation predictor with draggable Tx/Rx map points and automatic recalculation.
+- 24-hour MUF, FOT, and LUF charts plus amateur-band QSO-window guidance.
+- Native .NET Net Manager CRUD and scheduling workflows.
+- Portable Linux x64 distribution in addition to the Windows installer.
+- Real UI scaling for compact and high-density displays.
+- Improved DX Map and DX Globe layouts, country borders, previews, filters, and refresh behavior.
+- FT-710 SSB transmit-bandwidth controls and capability-aware Station Control options.
+- Faster contest exchange entry and improved IARU HF exchange refresh.
+
 ## What's New In 1.6.4
 
 - QSL Designer layouts now use percentage-based coordinates so fields scale across template resolutions.
@@ -114,6 +119,14 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.1.0 — 2026-07-17
+
+- Interactive route-based HF propagation prediction and 24-hour band guidance.
+- Linux x64 portable release packaging and update metadata.
+- Native .NET Net Manager workflows.
+- True desktop UI scaling and compact-screen improvements.
+- Expanded DX Map, DX Globe, Station Control, and contest-entry workflows.
 
 ### 1.6.4 — 2026-05-26
 
@@ -161,11 +174,11 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 
 ### Windows
 
-Use the installer for the normal setup experience. Use the portable ZIP if you prefer to keep the app in a folder without installing.
+Download and run `HQ2RDR_Setup_v2.1.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity.
 
 ### Linux
 
-Download the Linux ZIP, extract it, and run the bundled HQ2RDR executable. Some distributions may require GTK/WebKit libraries for embedded web views.
+Download `HQ2RDR_Linux_x64_v2.1.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### macOS
 
