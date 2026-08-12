@@ -1,6 +1,6 @@
 # HQ2RDR Logger & QSL Pro
 
-**Current stable version:** `2.3.0`
+**Current stable version:** `2.4.0`
 
 HQ2RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
 
@@ -14,10 +14,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.3.0` is published for Windows and Linux:
+Stable `2.4.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.3.0/HQ2RDR_Setup_v2.3.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.3.0/HQ2RDR_Linux_x64_v2.3.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.4.0/HQ2RDR_Setup_v2.4.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.4.0/HQ2RDR_Linux_x64_v2.4.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -82,6 +82,16 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
 
+## What's New In 2.4.0
+
+- Saved audio now has playback, stop, filtering, pagination, and direct navigation to linked QSOs.
+- CQ voice macros can be recorded, created, edited, re-recorded, deleted, colored, and opened with a keyboard shortcut.
+- The colored Macro Pad can be docked or floated and keeps symmetric full-card buttons in a responsive grid.
+- Audio-device routing lives in Settings while the Audio workspace focuses on recording, macros, and saved audio.
+- MIC, RX, and PLAY meters use a more useful signal scale.
+- DX Cluster spots use proportional columns in wide docks and complete compact cards in narrow docks.
+- The QRZ workspace is cleaner and VFO wheel tuning follows the digit beneath the pointer.
+
 ## What's New In 2.3.0
 
 - DX Cluster host and filter controls now fit narrow docks while leaving more vertical room for spots.
@@ -126,6 +136,14 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.4.0 — 2026-08-12
+
+- Made saved recordings actionable and added a complete CQ voice macro workflow.
+- Added a dockable, colored, responsive Macro Pad and improved audio meter scaling.
+- Moved persistent audio-device routing into Settings and stabilized Audio control interaction.
+- Added responsive wide and compact DX Cluster spot layouts.
+- Simplified the QRZ workspace and corrected VFO digit wheel targeting.
 
 ### 2.3.0 — 2026-08-01
 
@@ -202,11 +220,11 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.3.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.4.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.3.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.4.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### macOS
 
