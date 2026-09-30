@@ -1,6 +1,6 @@
 # HQ2RDR Logger & QSL Pro
 
-**Current stable version:** `2.4.0`
+**Current stable version:** `2.5.0`
 
 HQ2RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
 
@@ -14,10 +14,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.4.0` is published for Windows and Linux:
+Stable `2.5.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.4.0/HQ2RDR_Setup_v2.4.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.4.0/HQ2RDR_Linux_x64_v2.4.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.5.0/HQ2RDR_Setup_v2.5.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.5.0/HQ2RDR_Linux_x64_v2.5.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -72,7 +72,7 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Digital auto-log:** WSJT-X, JTDX, and MSHV logging through UDP/ADIF broadcasts.
 - **QRZ.com:** callsign lookup, profile data, photos, cache, embedded QRZ tab, logbook uploads, and confirmation workflows.
 - **LoTW:** TrustedQSL-assisted uploads and confirmation matching where configured.
-- **DX Cluster:** configurable cluster hosts, filters, color-coded spots, reconnect handling, and Spot DX from the logger.
+- **DX Cluster:** configurable cluster hosts, filters, color-coded spots, reconnect handling, and spot preparation from selected logbook QSOs through the context menu.
 - **POTA/SOTA activations:** live activation tables, fixed park workflows, hunter references, park lookup, and distance context.
 - **QSL Designer:** custom card templates, boxed field positioning, preview, batch JPG output, and email delivery.
 - **Maps and globe:** 2D DX Map and 3D DX Globe with paths, filters, distance context, and gray-zone support.
@@ -81,6 +81,20 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.5.0
+
+- **Net control and reports:** regional net-control sessions, reports, personal participation reports, report-editor layout improvements, and bundled Latin American schedules.
+- **Voice macros and PTT:** PTT macro transmission, per-macro shortcuts, and Learn for the Avalonia PTT shortcut.
+- **Cluster workflow:** follow the active radio band and prepare spots from selected logbook QSOs through the context menu.
+- **LoTW recovery:** full confirmation resync and incremental watermarks.
+- **CAT and FT-710:** configurable CAT polling, FT-710 bandwidth priority/read validation, and SSB MOD SOURCE control.
+- **WAE QTC:** WAE DX SSB QTC support.
+- **Maps, Activations, and docking:** reduced globe date crowding, clarified active-contact routes, compact filters, and cursor-anchored drag previews.
+- **Logging reports:** portable callsign operating-country recognition and over-S9 sent/received signal levels.
+- **Station assistant:** Ollama and Gemini providers, bounded logbook search, and conditional provider/model settings.
+- **QSO entry:** compact responsive QSO Entry and MORE panels with distinct POTA sections.
+- **Desktop cleanup:** removal of the retired legacy Python desktop application.
 
 ## What's New In 2.4.0
 
@@ -136,6 +150,14 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.5.0 — 2026-09-29
+
+- Added regional net-control, report, participation, and bundled schedule workflows.
+- Added PTT voice macros, per-macro shortcuts, the Avalonia PTT shortcut, active-band cluster follow, selected-QSO spot preparation, LoTW resync, configurable CAT polling, FT-710 controls, and WAE DX SSB QTC support.
+- Added globe date-layout, map-route, and compact-filter improvements, over-S9 signal reports, and portable callsign country recognition.
+- Added Ollama/Gemini station assistance, bounded logbook search, conditional provider settings, and compact POTA-oriented QSO Entry/MORE panels.
+- Anchored docking previews to the cursor and removed the retired legacy Python desktop application.
 
 ### 2.4.0 — 2026-08-12
 
@@ -220,15 +242,17 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.4.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.5.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.4.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.5.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
-### macOS
+### Supported desktop platforms
 
-macOS support exists through the PyInstaller spec, but macOS release artifacts may be published manually depending on build availability.
+The supported desktop distributions are the Windows installer and Linux x64
+portable ZIP listed above. Both are built from the .NET/Avalonia desktop
+project.
 
 ## First Run Checklist
 
