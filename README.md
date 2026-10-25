@@ -1,6 +1,6 @@
 # RDR - Radio Digital Resources
 
-**Current stable version:** `2.5.0`
+**Current stable version:** `2.6.0`
 
 HQ2RDR is now **RDR**. Existing installer filenames and data locations remain compatible.
 
@@ -15,54 +15,28 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.5.0` is published for Windows and Linux:
+Stable `2.6.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.5.0/HQ2RDR_Setup_v2.5.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.5.0/HQ2RDR_Linux_x64_v2.5.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.6.0/HQ2RDR_Setup_v2.6.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.6.0/HQ2RDR_Linux_x64_v2.6.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
 ## Screenshots
 
-### Fast QSO Logging
+Current screenshots are maintained on the [official RDR product page](https://rhemacode.com/es/hq2rdr-logger).
 
-![Logbook](screenshots/Logbook.png)
+### Logbook, Band Map and DX Cluster
 
-### Logbook Management
+![RDR logbook with Band Map and DX Cluster](https://rhemacode.com/hq2rdr/avalonia-logger.png)
 
-![Logbooks](screenshots/Logbooks.png)
+### 3D globe, activations and QSL/Sync services
 
-### Live Activations
+![RDR 3D globe with activations and QSL/Sync services](https://rhemacode.com/hq2rdr/avalonia-globe.png)
 
-![Activations](screenshots/Activations.png)
+### Station assistant
 
-### QRZ Lookup And Web Session
-
-![QRZ](screenshots/QRZ.png)
-
-### QSL Designer
-
-![QSL Designer](screenshots/QSL.png)
-
-### Statistics
-
-![Stats](screenshots/Stats.png)
-
-### Audio Recording
-
-![Audio](screenshots/Audio.png)
-
-### DX Map
-
-![DX Map](screenshots/DxMap.png)
-
-### DX Globe
-
-![DX Globe](screenshots/DxGlobe.png)
-
-### Nets
-
-![Nets](screenshots/Nets.png)
+![RDR station assistant beside the logbook and Band Map](https://rhemacode.com/hq2rdr/avalonia-assistant.png)
 
 ## Main Features
 
@@ -70,7 +44,7 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Multiple logbooks:** create, switch, filter, edit, import/export ADIF, and keep different operating activities separated.
 - **Station Control:** CAT, frequency, mode, power, VFO, station radio, station antenna, and band quick-selects in a dedicated dock.
 - **CAT integration:** FLRig and rigctld-compatible workflows for reading and sending radio state.
-- **Digital auto-log:** MSHV Logged QSO ADIF broadcast through UDP.
+- **Digital auto-log:** WSJT-X, JTDX and MSHV UDP/ADIF broadcasts.
 - **QRZ.com:** callsign lookup, profile data, photos, cache, embedded QRZ tab, logbook uploads, and confirmation workflows.
 - **LoTW:** TrustedQSL-assisted uploads and confirmation matching where configured.
 - **DX Cluster:** configurable cluster hosts, filters, color-coded spots, reconnect handling, and spot preparation from selected logbook QSOs through the context menu.
@@ -82,6 +56,16 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.6.0
+
+- CQ WW SSB scoring adds per-band totals, zone/country multipliers, contest-specific duplicate checks, multiplier hints in Cluster/Band Map, last-QSO score gains and received-zone entry focus.
+- Cloud Sync preserves logbook type and every contest setting across devices, including empty logbooks and configuration edits without new QSOs. Apply `supabase_logbook_contest_safe.sql` before using metadata sync, then first sync the device holding the complete contest configuration.
+- Logging adds ADIF import confirmation, preserves digital submodes, receives digital auto-log UDP broadcasts and optionally filters worked stations while entering a callsign.
+- Station Control improves radio selection, meter stability, peak display, FT-710 TX bandwidth controls and CAT diagnostics. DX Cluster connects automatically at startup.
+- Band Map improves station/frequency alignment, source grouping, scroll behavior and tuning from the frequency axis. Maps/Globe add solar gray line, corrected band/mode filters and collapsible filter panels.
+- QRZ receives compact browser navigation, search, zoom, QSO follow/pin controls and a collapsible contact summary. LoTW preserves confirmations, and Club Log adds ADIF batch uploads.
+- Audio supports RX audio in stereo QSO recordings. Net control adds a floating operator view and Excel/PDF exports. The app now uses the RDR name while retaining compatible data directories and installer filenames.
 
 ## What's New In 2.5.0
 
@@ -151,6 +135,14 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.6.0, 2026-10-25
+
+- Added CQ WW SSB totals, per-band multipliers, contest duplicate rules, spot multiplier hints, last-QSO score gains and received-zone entry focus.
+- Added cross-device logbook type and contest configuration sync, including empty logbooks and settings-only edits.
+- Improved ADIF/digital logging, CAT controls and diagnostics, automatic Cluster connection, Band Map tuning, gray line and map filters.
+- Added the compact QRZ browser workspace, preserved LoTW confirmations, Club Log ADIF uploads, RX audio recording and expanded net-control views/exports.
+- Updated the app branding to RDR while preserving compatible data locations and installer filenames.
 
 ### 2.5.0 — 2026-09-29
 
@@ -243,17 +235,25 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.5.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.6.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.5.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.6.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### Supported desktop platforms
 
 The supported desktop distributions are the Windows installer and Linux x64
 portable ZIP listed above. Both are built from the .NET/Avalonia desktop
 project.
+
+### Cloud contest settings after upgrading to 2.6.0
+
+For independent cloud deployments, the administrator must apply
+`supabase_logbook_contest_safe.sql` before synchronizing logbook contest settings.
+Update both devices, sync the device holding the complete contest configuration
+first, then sync the other device. Verify the logbook type, contest, sent exchange,
+category, operator class, power class, assisted setting and overlay.
 
 ## First Run Checklist
 
