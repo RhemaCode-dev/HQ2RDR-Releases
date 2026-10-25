@@ -1,8 +1,10 @@
 # RDR - Radio Digital Resources
 
+<img src="assets/rdr-logo.png" alt="RDR - Radio Digital Resources" width="240" />
+
 **Current stable version:** `2.6.0`
 
-HQ2RDR is now **RDR**. Existing installer filenames and data locations remain compatible.
+Existing installer filenames and data locations remain compatible with previous versions.
 
 RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
 
@@ -272,4 +274,3 @@ category, operator class, power class, assisted setting and overlay.
 - For release downloads, use this repository's [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 - Official website: https://rhemacode.com
 - Support: roberto@rhemacode.com
-- For source code and development history, see [HQ2RDR](https://github.com/RhemaCode-dev/HQ2RDR).

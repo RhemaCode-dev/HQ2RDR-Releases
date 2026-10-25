@@ -2,7 +2,7 @@
   "beta": {
     "version": "2.0.1-beta.1",
     "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
-    "notes": "HQ2RDR v2.0.1-beta.1: .NET/Avalonia beta release for Windows and Linux.",
+    "notes": "RDR v2.0.1-beta.1: .NET/Avalonia beta release for Windows and Linux.",
     "channel": "beta",
     "assets": {
       "windows_installer": {
@@ -22,7 +22,7 @@
   "stable": {
     "version": "2.6.0",
     "url": "https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases",
-    "notes": "HQ2RDR v2.6.0: .NET/Avalonia stable release for Windows and Linux.",
+    "notes": "RDR v2.6.0: .NET/Avalonia stable release for Windows and Linux.",
     "channel": "stable",
     "assets": {
       "windows_installer": {
