@@ -1,14 +1,15 @@
-# HQ2RDR Logger & QSL Pro
+# RDR - Radio Digital Resources
 
 **Current stable version:** `2.5.0`
 
-HQ2RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
+HQ2RDR is now **RDR**. Existing installer filenames and data locations remain compatible.
+
+RDR is a desktop ham radio logger for everyday operating, DXing, activations, nets, contest-style sessions, QSL workflows, and station management. It brings logging, CAT control, QRZ, LoTW, DX Cluster, POTA/SOTA activations, maps, audio recording, statistics, and QSL card generation into one dark-themed app.
 
 Developed by **RhemaCode**.
 
-- English website: https://rhemacode.com/en/hq2rdr-logger
-- Sitio en español: https://rhemacode.com/es/hq2rdr-logger
-- Support: contacto@rhemacode.com
+- Official website: https://rhemacode.com
+- Support: roberto@rhemacode.com
 
 ## Download
 
@@ -69,7 +70,7 @@ The app also includes a channel-aware updater. Use `Settings` to choose the stab
 - **Multiple logbooks:** create, switch, filter, edit, import/export ADIF, and keep different operating activities separated.
 - **Station Control:** CAT, frequency, mode, power, VFO, station radio, station antenna, and band quick-selects in a dedicated dock.
 - **CAT integration:** FLRig and rigctld-compatible workflows for reading and sending radio state.
-- **Digital auto-log:** WSJT-X, JTDX, and MSHV logging through UDP/ADIF broadcasts.
+- **Digital auto-log:** MSHV Logged QSO ADIF broadcast through UDP.
 - **QRZ.com:** callsign lookup, profile data, photos, cache, embedded QRZ tab, logbook uploads, and confirmation workflows.
 - **LoTW:** TrustedQSL-assisted uploads and confirmation matching where configured.
 - **DX Cluster:** configurable cluster hosts, filters, color-coded spots, reconnect handling, and spot preparation from selected logbook QSOs through the context menu.
@@ -269,7 +270,6 @@ project.
 - Use the built-in `App Log` tab for diagnostic messages.
 - Use the integrated help guide from the `?` button.
 - For release downloads, use this repository's [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
-- Official English product page: https://rhemacode.com/en/hq2rdr-logger
-- Pagina oficial en español: https://rhemacode.com/es/hq2rdr-logger
-- Support: contacto@rhemacode.com
+- Official website: https://rhemacode.com
+- Support: roberto@rhemacode.com
 - For source code and development history, see [HQ2RDR](https://github.com/RhemaCode-dev/HQ2RDR).
