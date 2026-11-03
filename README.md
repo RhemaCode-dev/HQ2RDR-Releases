@@ -2,7 +2,7 @@
 
 <img src="assets/rdr-logo.png" alt="RDR - Radio Digital Resources" width="240" />
 
-**Current stable version:** `2.6.0`
+**Current stable version:** `2.7.0`
 
 Existing installer filenames and data locations remain compatible with previous versions.
 
@@ -17,10 +17,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.6.0` is published for Windows and Linux:
+Stable `2.7.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.6.0/HQ2RDR_Setup_v2.6.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.6.0/HQ2RDR_Linux_x64_v2.6.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.7.0/HQ2RDR_Setup_v2.7.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.7.0/HQ2RDR_Linux_x64_v2.7.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -58,6 +58,17 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.7.0
+
+- **Setup assistant:** a guided first-run setup covers operator and station, operating profile and first logbook, QRZ.com with connection tests, LoTW with TrustedQSL, certificate guidance, a web account check, a per-logbook station location and a signing test that uploads nothing, CAT radio detection with a read-only test, antennas, audio with a level meter, DX Cluster, digital auto-log for WSJT-X, JTDX and MSHV, and QSL email with provider presets. A setup summary page and contextual links point to anything still missing.
+- **Settings:** Settings has its own view with sidebar navigation, task-based sections, search, a single save model with an unsaved-changes bar, and QRZ and LoTW pages with per-logbook tables. New installations no longer ship operator defaults and ask for a callsign, and new logbooks no longer contain sample QSOs.
+- **FT-710 and spectrum:** USB spectrum with a stationary waterfall, display controls, active-VFO tuning, a callsign strip, layout preferences, antenna tuner controls, a responsive band strip, compact rig controls and radio CAT compatibility shown during setup.
+- **Logging:** compact QSO history across logbooks, configurable Save and Clear shortcuts, a single DUPE warning, contest ADIF imports into General with logbook-scoped duplicate checks, corrected Cabrillo station identity and complete CQ WW headers, a QSO summary that uses the available space and a QSO Entry row that resizes when docked beside another panel.
+- **Nets:** an RDR operator layout and a mixed callsign queue.
+- **Maps:** the DX Map basemap works offline without a CARTO API key.
+- **Audio:** voice macros can play with or without automatic PTT.
+- **Branding:** the approved RDR app icon.
 
 ## What's New In 2.6.0
 
@@ -137,6 +148,15 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.7.0, 2026-11-02
+
+- Added the guided setup assistant, setup summary page and contextual setup links.
+- Rebuilt Settings with sidebar navigation, task-based sections, search, an unsaved-changes bar and per-logbook QRZ and LoTW pages; removed operator defaults and sample QSOs from new installations.
+- Added per-logbook TrustedQSL station locations with a signing test, and the cluster connect-on-startup option.
+- Added FT-710 USB spectrum, waterfall, display, VFO tuning and antenna tuner controls, a responsive band strip and CAT compatibility hints.
+- Added compact cross-logbook QSO history, configurable Save/Clear shortcuts, net operator layout and mixed queue, offline DX Map basemap and optional automatic PTT for voice macros.
+- Fixed contest ADIF import duplicates, Cabrillo headers, duplicate DUPE warnings and docked QSO Entry/summary sizing.
 
 ### 2.6.0, 2026-10-25
 
@@ -237,11 +257,11 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.6.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.7.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.6.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.7.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### Supported desktop platforms
 
@@ -258,6 +278,8 @@ first, then sync the other device. Verify the logbook type, contest, sent exchan
 category, operator class, power class, assisted setting and overlay.
 
 ## First Run Checklist
+
+On first run, the setup assistant walks through these steps. You can reopen it at any time from `Settings` > `Setup assistant`.
 
 1. Open `Settings`.
 2. Set your operator callsign and grid.
