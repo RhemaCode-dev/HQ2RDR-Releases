@@ -2,7 +2,7 @@
 
 <img src="assets/rdr-logo.png" alt="RDR - Radio Digital Resources" width="240" />
 
-**Current stable version:** `2.7.0`
+**Current stable version:** `2.8.0`
 
 Existing installer filenames and data locations remain compatible with previous versions.
 
@@ -17,10 +17,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.7.0` is published for Windows and Linux:
+Stable `2.8.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.7.0/HQ2RDR_Setup_v2.7.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.7.0/HQ2RDR_Linux_x64_v2.7.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.8.0/HQ2RDR_Setup_v2.8.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.8.0/HQ2RDR_Linux_x64_v2.8.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -58,6 +58,17 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.8.0
+
+- **FT-710 Station Control:** the radio's CAT controls sit in sections that open and close, show a summary of their state when closed and remember how you left them in each layout. Receive has the preamp (IPO, AMP1, AMP2), ATT, RF gain and AGC. Filters has NR, NB, DNF, notch, contour, IF shift and RX width. Operation has split, A=B, A/B swap and the clarifier. TX audio has the TX bandwidth, MOD source, speech processor, mic EQ and monitor. CW, shown in CW modes, has the keyer speed, pitch, break-in and the keyer memories. FM, shown in FM, has the squelch. Station reads the radio clock and sets it to the computer's UTC time. The band buttons recall the radio's own band stack.
+- **FT-710 spectrum:** the Spectrum panel sets the radio's scope level, which also sets the waterfall brightness, and its speed, and switches the scope to CENTER when it is in CURSOR or FIX.
+- **rigctld:** Hamlib rigctld is a supported CAT backend next to FLRig, including the FT-710 advanced controls. RDR waits longer between polls while the radio does not answer, and does not key PTT on a radio that is not answering.
+- **Remote station:** with an FT-710 on a remote host running the RDR station bridge, RDR plays the receive audio, sends the transmit audio, keys PTT with a watchdog on the remote side, shows the remote spectrum and waterfall, plays voice macros through the remote transmitter and sets the remote audio levels.
+- **Club Log:** uploads use the Club Log REST API with a personal token, and the logbook has a Club Log status column and a pending filter.
+- **Audio:** QSO recording, playback and voice macros work on Linux, Settings > Audio shows the level meters, and macro shortcuts are captured by pressing the keys.
+- **Logging:** QSOs show USB or LSB instead of SSB and export ADIF `MODE=SSB` with `SUBMODE`, the operator's POTA park is exported as `MY_POTA_REF`, contest points use the station's own country, spots on another band get the right sideband, and QSO Entry reflows in narrow panels.
+- **Fixes:** startup no longer fails after an upgrade that adds logbook columns, a duplicate LoTW certificate import no longer waits 60 seconds, and the QSL Queue counter is right after switching logbooks.
 
 ## What's New In 2.7.0
 
@@ -148,6 +159,14 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.8.0, 2026-11-15
+
+- Added FT-710 Station Control sections with preamp, ATT, RF gain, AGC, split, clarifier, DNF, monitor, squelch, CW keyer and memories, the radio clock and the band stack on the band buttons.
+- Added FT-710 scope level, speed and CENTER controls, and the FT-710 mic EQ and speech processor.
+- Added rigctld as a supported CAT backend, the remote station through the RDR station bridge, and Club Log uploads with the REST API.
+- Changed SSB QSOs to show USB or LSB and export ADIF `MODE=SSB` with `SUBMODE`.
+- Fixed the POTA park in ADIF, contest points outside Honduras, sidebands for spots on another band, startup after schema upgrades, duplicate LoTW certificate imports and the QSL Queue counter.
 
 ### 2.7.0, 2026-11-02
 
@@ -257,11 +276,11 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.7.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.8.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.7.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.8.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### Supported desktop platforms
 
