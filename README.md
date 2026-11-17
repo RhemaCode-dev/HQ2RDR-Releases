@@ -2,7 +2,7 @@
 
 <img src="assets/rdr-logo.png" alt="RDR - Radio Digital Resources" width="240" />
 
-**Current stable version:** `2.8.0`
+**Current stable version:** `2.9.0`
 
 Existing installer filenames and data locations remain compatible with previous versions.
 
@@ -17,10 +17,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.8.0` is published for Windows and Linux:
+Stable `2.9.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.8.0/HQ2RDR_Setup_v2.8.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.8.0/HQ2RDR_Linux_x64_v2.8.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.9.0/HQ2RDR_Setup_v2.9.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.9.0/HQ2RDR_Linux_x64_v2.9.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -58,6 +58,16 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.9.0
+
+- **A calmer, clearer look:** RDR uses the cyan from its logo as its one accent instead of the system blue and assorted greens, and color now means something: a state (pending, confirmed, warning, error) or a band. Headings and labels are neutral, figures and frequencies are monospaced, and the app stays dark when the system is in light mode.
+- **Top bar and QSO Entry:** the top bar shows the clock, CAT, operator, UDP, weather and propagation as plain text and only turns yellow or red when something needs attention. QSO Entry has one label style, a larger monospaced call field, and Save and Clear respond to a click anywhere on the button.
+- **Logbook:** denser rows fit about a third more QSOs on screen. Distances read `9,546 km` and turn amber for DX, frequencies keep three decimals with a small band-color mark, and Logbook, Cluster, Activations, Audio and Macro Pad share one pager.
+- **Stats:** Operating opens with four compact figures and QSOs by hour as the main chart, with the current UTC hour highlighted. Bands, distances and QSL status are thin bars or short lists.
+- **Station Control:** switch the FT-710 on and off from the `Station` section when it is on rigctld, also through the remote station. Sections can be moved and hidden per layout with `Customize`. Band buttons, sliders and section headers are quieter, and the panel no longer repeats its own title.
+- **Nets and empty screens:** net days follow the app language and long notes stay on one line. An empty Macro Pad, AI assistant, spectrum or Audio Controls panel says what is missing and offers the one action that fixes it.
+- **Fixes:** dates read the same everywhere (`2026-11-14 06:52 UTC`) and counts use real plurals; the DX Map legend is no longer hidden under the zoom buttons; Band Map labels are no longer crossed by the scale; tool tabs wrap instead of being cut off; the QSO summary title follows the app language; the remote station PTT watchdog keeps running after hours with the radio off; and the setup assistant explains rigctld radios correctly.
 
 ## What's New In 2.8.0
 
@@ -159,6 +169,13 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.9.0, 2026-11-17
+
+- Changed the whole interface to one accent color, neutral headings and labels, monospaced figures and color only for states and bands.
+- Changed the top bar, QSO Entry, the logbook table, Stats, Station Control and Nets to a quieter, denser layout, with one shared pager and designed empty screens.
+- Added switching the FT-710 on and off from Station Control on rigctld, and moving and hiding Station Control sections per layout.
+- Fixed date and count formats, the DX Map legend, Band Map labels, cut-off tool tabs, the QSO summary title language, the remote PTT watchdog after hours with the radio off, and the setup assistant texts for rigctld radios.
 
 ### 2.8.0, 2026-11-15
 
@@ -276,11 +293,11 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.8.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.9.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.8.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.9.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### Supported desktop platforms
 
