@@ -2,7 +2,7 @@
 
 <img src="assets/rdr-logo.png" alt="RDR - Radio Digital Resources" width="240" />
 
-**Current stable version:** `2.9.0`
+**Current stable version:** `2.10.0`
 
 Existing installer filenames and data locations remain compatible with previous versions.
 
@@ -17,10 +17,10 @@ Developed by **RhemaCode**.
 
 Download the latest builds from the [Releases page](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases).
 
-Stable `2.9.0` is published for Windows and Linux:
+Stable `2.10.0` is published for Windows and Linux:
 
-- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.9.0/HQ2RDR_Setup_v2.9.0.exe)
-- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.9.0/HQ2RDR_Linux_x64_v2.9.0.zip)
+- [Windows Installer](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.10.0/HQ2RDR_Setup_v2.10.0.exe)
+- [Linux x64 Portable ZIP](https://github.com/RhemaCode-dev/HQ2RDR-Releases/releases/download/v2.10.0/HQ2RDR_Linux_x64_v2.10.0.zip)
 
 The app also includes a channel-aware updater. Use `Settings` to choose the stable or beta update channel.
 
@@ -58,6 +58,14 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - **Weather and propagation:** UTC clock, weather from grid, HamQSL propagation, SFI, K-index, and status-bar indicators.
 - **Cloud sync:** optional paid multi-device sync with license activation and retry handling.
 - **Bilingual UI:** English and Spanish interface plus bundled user guides.
+
+## What's New In 2.10.0
+
+- **Remote station power supply:** with a Tasmota plug on the radio's power supply, Station Control's `Station` section shows `Supply` and switches it. Switching off takes a second click, switches the FT-710 off over CAT first and is refused while the radio transmits; switching on gives the radio power and switches it on.
+- **Microphone with the radio's own PTT:** a foot switch plugged into the FT-710 at the remote station can key it with the computer's microphone, after turning on `Settings > Remote Station > Send microphone when the radio's own PTT keys it`.
+- **QRZ nickname:** QRZ.com lookups show the operator's nickname, as in `Todd "Mic" Burnette`.
+- **Remote station:** a guided installer sets up a new FT-710 remote station on Debian, and the station bridge serves RDR Mobile. With the supply off, the bridge leaves rigctld alone, the radio comes back in about 15 s instead of 74 s, and a rigctld that stops answering is restarted.
+- **Station Control:** scrolling the panel with the mouse wheel or trackpad no longer tunes the radio when the frequency passes under the pointer.
 
 ## What's New In 2.9.0
 
@@ -169,6 +177,13 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 - Updated this release repository documentation with screenshots and feature summaries.
 
 ## Stable Changelog
+
+### 2.10.0, 2026-11-22
+
+- Added switching the remote station's power supply from Station Control through a Tasmota plug.
+- Added sending the microphone while a foot switch on the FT-710 keys the remote radio, and the QRZ nickname in looked-up names.
+- Added the guided remote station installer and RDR Mobile support in the station bridge.
+- Fixed a slow radio power-on after the supply comes back, and a rigctld that stopped answering while the radio had no power.
 
 ### 2.9.0, 2026-11-17
 
@@ -293,11 +308,11 @@ Current screenshots are maintained on the [official RDR product page](https://rh
 
 ### Windows
 
-Download and run `HQ2RDR_Setup_v2.9.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
+Download and run `HQ2RDR_Setup_v2.10.0.exe`. The installer upgrades an existing HQ2RDR installation while preserving its application identity and `%APPDATA%\HQ2RDR` user data.
 
 ### Linux
 
-Download `HQ2RDR_Linux_x64_v2.9.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
+Download `HQ2RDR_Linux_x64_v2.10.0.zip`, extract it, make the `HQ2RDR` binary executable if needed, and run it. The package is self-contained for Linux x64; embedded web views may still require distribution-provided GTK/WebKit components.
 
 ### Supported desktop platforms
 
